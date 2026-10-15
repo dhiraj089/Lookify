@@ -1,0 +1,2482 @@
+[
+    {
+        "order_id": "ORD-1771066258",
+        "date": "2026-02-14 16:20:58",
+        "email": "guest@lookify.com",
+        "items": [
+            {
+                "id": "10008",
+                "image": "fashion-dataset/images\\10008.jpg",
+                "name": "10008",
+                "price": 950,
+                "size": "S"
+            }
+        ],
+        "total": 950,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771067555",
+        "date": "2026-02-14 16:42:35",
+        "email": "guest@lookify.com",
+        "items": [
+            {
+                "id": "10025",
+                "image": "fashion-dataset/images\\10025.jpg",
+                "name": "10025",
+                "price": 650,
+                "size": "S"
+            }
+        ],
+        "total": 650,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771067617",
+        "date": "2026-02-14 16:43:37",
+        "email": "guest@lookify.com",
+        "items": [
+            {
+                "id": "10025",
+                "image": "fashion-dataset/images\\10025.jpg",
+                "name": "10025",
+                "price": 650,
+                "size": "S"
+            }
+        ],
+        "total": 650,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771068841",
+        "date": "2026-02-14 17:04:01",
+        "email": "guest@lookify.com",
+        "items": [
+            {
+                "id": "10027",
+                "image": "fashion-dataset/images\\10027.jpg",
+                "name": "10027",
+                "price": 1100,
+                "size": "S"
+            }
+        ],
+        "total": 1100,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771068984",
+        "date": "2026-02-14 17:06:24",
+        "email": "guest@lookify.com",
+        "items": [
+            {
+                "id": "10027",
+                "image": "fashion-dataset/images\\10027.jpg",
+                "name": "10027",
+                "price": 850,
+                "size": "S"
+            }
+        ],
+        "total": 850,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771069268",
+        "date": "2026-02-14 17:11:08",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "10027",
+                "image": "fashion-dataset/images\\10027.jpg",
+                "name": "10027",
+                "price": 850,
+                "size": "S"
+            }
+        ],
+        "total": 850,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771069324",
+        "date": "2026-02-14 17:12:04",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "11270",
+                "image": "fashion-dataset/images\\11270.jpg",
+                "name": "11270",
+                "price": 950,
+                "size": "S"
+            }
+        ],
+        "total": 950,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771069592",
+        "date": "2026-02-14 17:16:32",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "12797",
+                "image": "fashion-dataset/images\\12797.jpg",
+                "name": "12797",
+                "price": 1100,
+                "size": "S"
+            }
+        ],
+        "total": 1100,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771069961",
+        "date": "2026-02-14 17:22:41",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "12607",
+                "image": "fashion-dataset/images\\12607.jpg",
+                "name": "12607",
+                "price": 1200,
+                "size": "S"
+            }
+        ],
+        "total": 1200,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771070194",
+        "date": "2026-02-14 17:26:34",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "10009",
+                "image": "fashion-dataset/images\\10009.jpg",
+                "name": "10009",
+                "price": 650,
+                "size": "S"
+            }
+        ],
+        "total": 650,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771070395",
+        "date": "2026-02-14 17:29:55",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "14026",
+                "image": "fashion-dataset/images\\14026.jpg",
+                "name": "14026",
+                "price": 1200,
+                "size": "S"
+            },
+            {
+                "id": "13194",
+                "image": "fashion-dataset/images\\13194.jpg",
+                "name": "13194",
+                "price": 1100,
+                "size": "S"
+            }
+        ],
+        "total": 2300,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771070675",
+        "date": "2026-02-14 17:34:35",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "11270",
+                "image": "fashion-dataset/images\\11270.jpg",
+                "name": "11270",
+                "price": 850,
+                "size": "S"
+            }
+        ],
+        "total": 850,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771089010",
+        "date": "2026-02-14 22:40:10",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "12741",
+                "image": "fashion-dataset/images\\12741.jpg",
+                "name": "12741",
+                "price": 850,
+                "size": "S"
+            },
+            {
+                "id": "10655",
+                "image": "fashion-dataset/images\\10655.jpg",
+                "name": "10655",
+                "price": 850,
+                "size": "S"
+            }
+        ],
+        "total": 1700,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771169077",
+        "date": "2026-02-15 20:54:37",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "10027",
+                "image": "fashion-dataset/images\\10027.jpg",
+                "name": "10027",
+                "price": 950,
+                "size": "S"
+            }
+        ],
+        "total": 950,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771178389",
+        "date": "2026-02-15 23:29:49",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "10027",
+                "image": "fashion-dataset/images\\10027.jpg",
+                "name": "10027",
+                "price": 1200,
+                "size": "S"
+            },
+            {
+                "id": "Gini and Jony Boys Comics Blue Jeans",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/40927.jpg",
+                "name": "Gini and Jony Boys Comics Blue Jeans",
+                "price": 1999,
+                "size": "M"
+            }
+        ],
+        "total": 3199,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771179740",
+        "date": "2026-02-15 23:52:20",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "11270",
+                "image": "fashion-dataset/images\\11270.jpg",
+                "name": "11270",
+                "price": 1200,
+                "size": "S"
+            },
+            {
+                "id": "Proline Men Grey Comfort Fit Sports Shorts",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/7878.jpg",
+                "name": "Proline Men Grey Comfort Fit Sports Shorts",
+                "price": 1799,
+                "size": "M"
+            }
+        ],
+        "total": 2999,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771252987",
+        "date": "2026-02-16 20:13:07",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "10714",
+                "image": "fashion-dataset/images\\10714.jpg",
+                "name": "10714",
+                "price": 650,
+                "size": "S"
+            },
+            {
+                "id": "Fastrack Men Analogue Plastic White Watch",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/10098.jpg",
+                "name": "Fastrack Men Analogue Plastic White Watch",
+                "price": 1599,
+                "size": "M"
+            }
+        ],
+        "total": 2249,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771265099",
+        "date": "2026-02-16 23:34:59",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Spykar Men Washed Blue Jeans",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/16919.jpg",
+                "name": "Spykar Men Washed Blue Jeans",
+                "price": 2099,
+                "size": "M"
+            },
+            {
+                "id": "Red Tape Men Brown Shoes",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/45625.jpg",
+                "name": "Red Tape Men Brown Shoes",
+                "price": 1999,
+                "size": "M"
+            }
+        ],
+        "total": 4098,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771314904",
+        "date": "2026-02-17 13:25:04",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "11270",
+                "image": "fashion-dataset/images\\11270.jpg",
+                "name": "11270",
+                "price": 1100,
+                "size": "S"
+            },
+            {
+                "id": "Basics Men Brown Trousers",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/12212.jpg",
+                "name": "Basics Men Brown Trousers",
+                "price": 2199,
+                "size": "M"
+            }
+        ],
+        "total": 3299,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771316475",
+        "date": "2026-02-17 13:51:15",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "12811",
+                "image": "fashion-dataset/images\\12811.jpg",
+                "name": "12811",
+                "price": 950,
+                "size": "S"
+            }
+        ],
+        "total": 950,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771317231",
+        "date": "2026-02-17 14:03:51",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "10032",
+                "image": "fashion-dataset/images\\10032.jpg",
+                "name": "10032",
+                "price": 950,
+                "size": "S"
+            }
+        ],
+        "total": 950,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "upi",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771317464",
+        "date": "2026-02-17 14:07:44",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "10032",
+                "image": "fashion-dataset/images\\10032.jpg",
+                "name": "10032",
+                "price": 850,
+                "size": "S"
+            }
+        ],
+        "total": 850,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771317803",
+        "date": "2026-02-17 14:13:23",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "10025",
+                "image": "fashion-dataset/images\\10025.jpg",
+                "name": "10025",
+                "price": 1200,
+                "size": "S"
+            },
+            {
+                "id": "Bulchee Men Dark Brown Leather Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/27807.jpg",
+                "name": "Bulchee Men Dark Brown Leather Belt",
+                "price": 1199,
+                "size": "M"
+            }
+        ],
+        "total": 2399,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771318697",
+        "date": "2026-02-17 14:28:17",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "11270",
+                "image": "fashion-dataset/images\\11270.jpg",
+                "name": "11270",
+                "price": 850,
+                "size": "S"
+            },
+            {
+                "id": "Horsefly Men Blue Jeans",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/56798.jpg",
+                "name": "Horsefly Men Blue Jeans",
+                "price": 2799,
+                "size": "M"
+            }
+        ],
+        "total": 3649,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771354589",
+        "date": "2026-02-18 00:26:29",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Grey T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/53759.jpg",
+                "name": "Puma Men Grey T-shirt",
+                "price": 2999,
+                "size": "M"
+            }
+        ],
+        "total": 2999,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771354869",
+        "date": "2026-02-18 00:31:09",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 2999,
+                "size": "M"
+            },
+            {
+                "id": "Wrangler Women Blue Molly Jeans",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/51600.jpg",
+                "name": "Wrangler Women Blue Molly Jeans",
+                "price": 2699,
+                "size": "M"
+            }
+        ],
+        "total": 5698,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771355172",
+        "date": "2026-02-18 00:36:12",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Future Cat Remix SF Black Casual Shoes",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/9204.jpg",
+                "name": "Puma Men Future Cat Remix SF Black Casual Shoes",
+                "price": 2999,
+                "size": "9"
+            },
+            {
+                "id": "John Miller Men Black white small check Shirts",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/9481.jpg",
+                "name": "John Miller Men Black white small check Shirts",
+                "price": 1199,
+                "size": "M"
+            }
+        ],
+        "total": 4198,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (yash@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771356842",
+        "date": "2026-02-18 01:04:02",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Murcia Women Blue Handbag",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47957.jpg",
+                "name": "Murcia Women Blue Handbag",
+                "price": 1349,
+                "size": "M"
+            }
+        ],
+        "total": 1349,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771357124",
+        "date": "2026-02-18 01:08:44",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Grey T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/53759.jpg",
+                "name": "Puma Men Grey T-shirt",
+                "price": 1849,
+                "size": "M"
+            },
+            {
+                "id": "Locomotive Men Washed Blue Jeans",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/16512.jpg",
+                "name": "Locomotive Men Washed Blue Jeans",
+                "price": 2699,
+                "size": "M"
+            }
+        ],
+        "total": 4548,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771357416",
+        "date": "2026-02-18 01:13:36",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "CASIO EDIFICE Men Black Dial Chronograph Watch ED60",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/45258.jpg",
+                "name": "CASIO EDIFICE Men Black Dial Chronograph Watch ED60",
+                "price": 1649,
+                "size": "M"
+            },
+            {
+                "id": "Mark Taylor Men White Striped Shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/12023.jpg",
+                "name": "Mark Taylor Men White Striped Shirt",
+                "price": 1999,
+                "size": "M"
+            }
+        ],
+        "total": 3648,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771440010",
+        "date": "2026-02-19 00:10:10",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Nike Women Black T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/2288.jpg",
+                "name": "Nike Women Black T-shirt",
+                "price": 649,
+                "size": "M"
+            }
+        ],
+        "total": 649,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771440400",
+        "date": "2026-02-19 00:16:40",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Nike Women Black T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/2288.jpg",
+                "name": "Nike Women Black T-shirt",
+                "price": 649,
+                "size": "M"
+            }
+        ],
+        "total": 649,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (aarya@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771441247",
+        "date": "2026-02-19 00:30:47",
+        "email": "23107104@apsit.esu.in",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 949,
+                "size": "M"
+            }
+        ],
+        "total": 949,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (xyz@121)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771441364",
+        "date": "2026-02-19 00:32:44",
+        "email": "23107104@apsit.edu.in",
+        "items": [
+            {
+                "id": "Fossil Women Black Huarache Weave Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/48123.jpg",
+                "name": "Fossil Women Black Huarache Weave Belt",
+                "price": 1449,
+                "size": "M"
+            }
+        ],
+        "total": 1449,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (xyz@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771442017",
+        "date": "2026-02-19 00:43:37",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Fastrack Men Black Watch",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/43164.jpg",
+                "name": "Fastrack Men Black Watch",
+                "price": 1649,
+                "size": "M"
+            },
+            {
+                "id": "Probase Men Check Blue Shirts",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/12665.jpg",
+                "name": "Probase Men Check Blue Shirts",
+                "price": 2199,
+                "size": "M"
+            }
+        ],
+        "total": 3848,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (09322780629@)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771442372",
+        "date": "2026-02-19 00:49:32",
+        "email": "23107017@apsit.edu.in",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 949,
+                "size": "M"
+            }
+        ],
+        "total": 949,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (zyx@apsit)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771493121",
+        "date": "2026-02-19 14:55:21",
+        "email": "23107017@apsit.edu.in",
+        "items": [
+            {
+                "id": "10027",
+                "image": "fashion-dataset/images\\10027.jpg",
+                "name": "10027",
+                "price": 1100,
+                "size": "S"
+            }
+        ],
+        "total": 1100,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (ac@12)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771526319",
+        "date": "2026-02-20 00:08:39",
+        "email": "23107017@apsit.edu.in",
+        "items": [
+            {
+                "id": "Baggit Women Hood Dabang Black Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/38402.jpg",
+                "name": "Baggit Women Hood Dabang Black Belt",
+                "price": 1549,
+                "size": "M"
+            },
+            {
+                "id": "Mother Earth Women Blue Printed Kurta",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/42533.jpg",
+                "name": "Mother Earth Women Blue Printed Kurta",
+                "price": 2499,
+                "size": "M"
+            }
+        ],
+        "total": 4048,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (xya@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771528000",
+        "date": "2026-02-20 00:36:40",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Fossil Women Black Huarache Weave Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/48123.jpg",
+                "name": "Fossil Women Black Huarache Weave Belt",
+                "price": 1449,
+                "size": "M"
+            }
+        ],
+        "total": 1449,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (xyz@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771528659",
+        "date": "2026-02-20 00:47:39",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 1149,
+                "size": "M"
+            }
+        ],
+        "total": 1149,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (axy@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771528768",
+        "date": "2026-02-20 00:49:28",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Hood Dabang Black Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/38402.jpg",
+                "name": "Baggit Women Hood Dabang Black Belt",
+                "price": 1549,
+                "size": "M"
+            }
+        ],
+        "total": 1549,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (zre@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771529889",
+        "date": "2026-02-20 01:08:09",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Hood Dabang Black Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/38402.jpg",
+                "name": "Baggit Women Hood Dabang Black Belt",
+                "price": 1549,
+                "size": "M"
+            }
+        ],
+        "total": 1549,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (xyz@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771530079",
+        "date": "2026-02-20 01:11:19",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Fossil Women Black Huarache Weave Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/48123.jpg",
+                "name": "Fossil Women Black Huarache Weave Belt",
+                "price": 1449,
+                "size": "M"
+            }
+        ],
+        "total": 1449,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (wers@56)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771530204",
+        "date": "2026-02-20 01:13:24",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Hood Dabang Black Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/38402.jpg",
+                "name": "Baggit Women Hood Dabang Black Belt",
+                "price": 1549,
+                "size": "M"
+            }
+        ],
+        "total": 1549,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (jdhdn@676)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771530920",
+        "date": "2026-02-20 01:25:20",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Police Men Black Dial Watch PL12889JVSB",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/29928.jpg",
+                "name": "Police Men Black Dial Watch PL12889JVSB",
+                "price": 1449,
+                "size": "M"
+            }
+        ],
+        "total": 1449,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (asxs@44)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771531001",
+        "date": "2026-02-20 01:26:41",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Fossil Women Black Huarache Weave Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/48123.jpg",
+                "name": "Fossil Women Black Huarache Weave Belt",
+                "price": 1449,
+                "size": "M"
+            }
+        ],
+        "total": 1449,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (bhghgj@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771531505",
+        "date": "2026-02-20 01:35:05",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 1149,
+                "size": "M"
+            }
+        ],
+        "total": 1149,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (vjgvjg@1344)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771531621",
+        "date": "2026-02-20 01:37:01",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 1149,
+                "size": "M"
+            }
+        ],
+        "total": 1149,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (gvvff@43)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771531741",
+        "date": "2026-02-20 01:39:01",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 1149,
+                "size": "M"
+            }
+        ],
+        "total": 1149,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (hshsa@45)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771532000",
+        "date": "2026-02-20 01:43:20",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 1149,
+                "size": "M"
+            }
+        ],
+        "total": 1149,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (fvgmv@122)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771532237",
+        "date": "2026-02-20 01:47:17",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 1149,
+                "size": "M"
+            }
+        ],
+        "total": 1149,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (nxxn@455)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771532648",
+        "date": "2026-02-20 01:54:08",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Hood Dabang Black Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/38402.jpg",
+                "name": "Baggit Women Hood Dabang Black Belt",
+                "price": 1549,
+                "size": "M"
+            }
+        ],
+        "total": 1549,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (vqsvus@1q33)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771532814",
+        "date": "2026-02-20 01:56:54",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Fossil Women Black Huarache Weave Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/48123.jpg",
+                "name": "Fossil Women Black Huarache Weave Belt",
+                "price": 1449,
+                "size": "M"
+            }
+        ],
+        "total": 1449,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (hvvjf243@)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771532971",
+        "date": "2026-02-20 01:59:31",
+        "email": "bhangaresayli09@gmail.com",
+        "items": [
+            {
+                "id": "Jealous 21 Women's Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/3954.jpg",
+                "name": "Jealous 21 Women's Pink T-shirt",
+                "price": 1149,
+                "size": "M"
+            }
+        ],
+        "total": 1149,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (gvjgvj@fcfc43)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771533106",
+        "date": "2026-02-20 02:01:46",
+        "email": "ysahbhosale696@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Grey T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/53759.jpg",
+                "name": "Puma Men Grey T-shirt",
+                "price": 949,
+                "size": "M"
+            }
+        ],
+        "total": 949,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Airoli",
+            "pincode": "400708"
+        },
+        "payment": "UPI (njkzsba@41432)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771533296",
+        "date": "2026-02-20 02:04:56",
+        "email": "yashbhosale696@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Grey T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/53759.jpg",
+                "name": "Puma Men Grey T-shirt",
+                "price": 1649,
+                "size": "M"
+            }
+        ],
+        "total": 1649,
+        "address": {
+            "line1": "thane",
+            "city": "thane",
+            "pincode": "400606"
+        },
+        "payment": "UPI (cdcdsc@455)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771533440",
+        "date": "2026-02-20 02:07:20",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Future Cat Remix SF Black Casual Shoes",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/9204.jpg",
+                "name": "Puma Men Future Cat Remix SF Black Casual Shoes",
+                "price": 2049,
+                "size": "M"
+            }
+        ],
+        "total": 2049,
+        "address": {
+            "line1": "Kamala City",
+            "city": "Pune",
+            "pincode": "411046"
+        },
+        "payment": "UPI (scxsgvk@234)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771533583",
+        "date": "2026-02-20 02:09:43",
+        "email": "yashbhosale696@gmail.com",
+        "items": [
+            {
+                "id": "ADIDAS Men Lfc Auth Hood Grey Sweatshirts",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/13089.jpg",
+                "name": "ADIDAS Men Lfc Auth Hood Grey Sweatshirts",
+                "price": 849,
+                "size": "M"
+            }
+        ],
+        "total": 849,
+        "address": {
+            "line1": "thane",
+            "city": "nsndn",
+            "pincode": "ndnsk"
+        },
+        "payment": "UPI (vxjsgxvv@234)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771533927",
+        "date": "2026-02-20 02:15:27",
+        "email": "yashbhosale696@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Brown Handbag",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47359.jpg",
+                "name": "Baggit Women Brown Handbag",
+                "price": 349,
+                "size": "M"
+            }
+        ],
+        "total": 349,
+        "address": {
+            "line1": "thane",
+            "city": "nsndn",
+            "pincode": "ndnsk"
+        },
+        "payment": "UPI (jfcxgxch@454)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771533988",
+        "date": "2026-02-20 02:16:28",
+        "email": "yashbhosale696@gmail.com",
+        "items": [
+            {
+                "id": "13705",
+                "image": "fashion-dataset/images\\13705.jpg",
+                "name": "13705",
+                "price": 1100,
+                "size": "S"
+            }
+        ],
+        "total": 1100,
+        "address": {
+            "line1": "thane",
+            "city": "nsndn",
+            "pincode": "ndnsk"
+        },
+        "payment": "UPI (sabbhab@4775)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771534047",
+        "date": "2026-02-20 02:17:27",
+        "email": "yashbhosale696@gmail.com",
+        "items": [
+            {
+                "id": "13705",
+                "image": "fashion-dataset/images\\13705.jpg",
+                "name": "13705",
+                "price": 1100,
+                "size": "S"
+            }
+        ],
+        "total": 1100,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (sabbhab@4775)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771536811",
+        "date": "2026-02-20 03:03:31",
+        "email": "yashbhosale696@gmail.com",
+        "items": [
+            {
+                "id": "Helix Women Black Watch",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47992.jpg",
+                "name": "Helix Women Black Watch",
+                "price": 999,
+                "size": "M"
+            }
+        ],
+        "total": 999,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (zjbkzb@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771536922",
+        "date": "2026-02-20 03:05:22",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Brown Handbag",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47359.jpg",
+                "name": "Baggit Women Brown Handbag",
+                "price": 2049,
+                "size": "M"
+            }
+        ],
+        "total": 2049,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Mumbai",
+            "pincode": "400708"
+        },
+        "payment": "UPI (vjgvgc@1335)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771593533",
+        "date": "2026-02-20 18:48:53",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Brown Handbag",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47359.jpg",
+                "name": "Baggit Women Brown Handbag",
+                "price": 2049,
+                "size": "M"
+            }
+        ],
+        "total": 2049,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (zdfzdz@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771593727",
+        "date": "2026-02-20 18:52:07",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Future Cat Remix SF Black Casual Shoes",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/9204.jpg",
+                "name": "Puma Men Future Cat Remix SF Black Casual Shoes",
+                "price": 1849,
+                "size": "9"
+            }
+        ],
+        "total": 1849,
+        "address": {
+            "line1": "sec10 Rabale",
+            "city": "rabale",
+            "pincode": "123233"
+        },
+        "payment": "UPI (qwrem@445)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771594996",
+        "date": "2026-02-20 19:13:16",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "Nike Women Black T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/2288.jpg",
+                "name": "Nike Women Black T-shirt",
+                "price": 1449,
+                "size": "M"
+            }
+        ],
+        "total": 1449,
+        "address": {
+            "line1": "sec10 Rabale",
+            "city": "rabale",
+            "pincode": "123233"
+        },
+        "payment": "UPI (wsw@132)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771595116",
+        "date": "2026-02-20 19:15:16",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Buckaroo Men Flores Black Formal Shoes",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/9036.jpg",
+                "name": "Buckaroo Men Flores Black Formal Shoes",
+                "price": 1949,
+                "size": "9"
+            }
+        ],
+        "total": 1949,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (cfhc@13234)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771598533",
+        "date": "2026-02-20 20:12:13",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "11270",
+                "image": "fashion-dataset/images\\11270.jpg",
+                "name": "11270",
+                "price": 950,
+                "size": "S"
+            },
+            {
+                "id": "Genesis Men Black Trousers",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/29402.jpg",
+                "name": "Genesis Men Black Trousers",
+                "price": 2999,
+                "size": "M"
+            },
+            {
+                "id": "CASIO G-Shock Men Black Analogue & Digital Watch GA-201-1ADR G362",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/25332.jpg",
+                "name": "CASIO G-Shock Men Black Analogue & Digital Watch GA-201-1ADR G362",
+                "price": 2899,
+                "size": "M"
+            }
+        ],
+        "total": 6848,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (xsxa@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771598971",
+        "date": "2026-02-20 20:19:31",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "Just Natural Unisex Charcoal Rain Jacket",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/52029.jpg",
+                "name": "Just Natural Unisex Charcoal Rain Jacket",
+                "price": 1949,
+                "size": "M"
+            }
+        ],
+        "total": 1949,
+        "address": {
+            "line1": "thane vartak",
+            "city": "thane",
+            "pincode": "400606"
+        },
+        "payment": "UPI (wbhbwshb@33)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771599259",
+        "date": "2026-02-20 20:24:19",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Grey T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/53759.jpg",
+                "name": "Puma Men Grey T-shirt",
+                "price": 349,
+                "size": "M"
+            },
+            {
+                "id": "10066",
+                "image": "fashion-dataset/images\\10066.jpg",
+                "name": "10066",
+                "price": 1100,
+                "size": "L"
+            },
+            {
+                "id": "Citizen Men Black Dial Eco-Drive Watch",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/33891.jpg",
+                "name": "Citizen Men Black Dial Eco-Drive Watch",
+                "price": 1099,
+                "size": "M"
+            },
+            {
+                "id": "Myntra Men Green Check Shorts",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/51393.jpg",
+                "name": "Myntra Men Green Check Shorts",
+                "price": 1699,
+                "size": "M"
+            },
+            {
+                "id": "JAG Men Black Leather Wallet",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/52806.jpg",
+                "name": "JAG Men Black Leather Wallet",
+                "price": 2199,
+                "size": "M"
+            }
+        ],
+        "total": 6446,
+        "address": {
+            "city": "thane",
+            "line1": "thane vartak",
+            "pincode": "400606"
+        },
+        "payment": "UPI (azavj@344)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771604367",
+        "date": "2026-02-20 21:49:27",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Urban Yoga Women Printed Pink T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/28469.jpg",
+                "name": "Urban Yoga Women Printed Pink T-shirt",
+                "price": 549,
+                "size": "M"
+            }
+        ],
+        "total": 549,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (sxsx@1442)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771604629",
+        "date": "2026-02-20 21:53:49",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Future Cat Remix SF Black Casual Shoes",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/9204.jpg",
+                "name": "Puma Men Future Cat Remix SF Black Casual Shoes",
+                "price": 1349,
+                "size": "9"
+            }
+        ],
+        "total": 1349,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (cfcfd@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771604729",
+        "date": "2026-02-20 21:55:29",
+        "email": "yashbhosale696@gmail.com",
+        "items": [
+            {
+                "id": "Fossil Women Black Huarache Weave Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/48123.jpg",
+                "name": "Fossil Women Black Huarache Weave Belt",
+                "price": 2049,
+                "size": "M"
+            }
+        ],
+        "total": 2049,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (bagvagv@2334)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771606613",
+        "date": "2026-02-20 22:26:53",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Brown Handbag",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47359.jpg",
+                "name": "Baggit Women Brown Handbag",
+                "price": 2049,
+                "size": "M"
+            }
+        ],
+        "total": 2049,
+        "address": {
+            "line1": "a p shah",
+            "city": "thane",
+            "pincode": "488993908"
+        },
+        "payment": "UPI (abc@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771606933",
+        "date": "2026-02-20 22:32:13",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Brown Handbag",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47359.jpg",
+                "name": "Baggit Women Brown Handbag",
+                "price": 2049,
+                "size": "M"
+            }
+        ],
+        "total": 2049,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (abc@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771607013",
+        "date": "2026-02-20 22:33:33",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "Puma Men Grey T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/53759.jpg",
+                "name": "Puma Men Grey T-shirt",
+                "price": 349,
+                "size": "M"
+            }
+        ],
+        "total": 349,
+        "address": {
+            "city": "thane",
+            "line1": "thane vartak",
+            "pincode": "400606"
+        },
+        "payment": "UPI (xyz@231)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771607167",
+        "date": "2026-02-20 22:36:07",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "10655",
+                "image": "fashion-dataset/images\\10655.jpg",
+                "name": "10655",
+                "price": 1100,
+                "size": "S"
+            }
+        ],
+        "total": 1100,
+        "address": {
+            "city": "thane",
+            "line1": "thane vartak",
+            "pincode": "400606"
+        },
+        "payment": "UPI (xyz@231)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771607248",
+        "date": "2026-02-20 22:37:28",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 449,
+                "size": "M"
+            }
+        ],
+        "total": 449,
+        "address": {
+            "city": "thane",
+            "line1": "thane vartak",
+            "pincode": "400606"
+        },
+        "payment": "UPI (xyz@231)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771607781",
+        "date": "2026-02-20 22:46:21",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "13743",
+                "image": "fashion-dataset/images\\13743.jpg",
+                "name": "13743",
+                "price": 650,
+                "size": "S"
+            },
+            {
+                "id": "Nike Men AS Thermal Grey Track Pants",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/15612.jpg",
+                "name": "Nike Men AS Thermal Grey Track Pants",
+                "price": 999,
+                "size": "M"
+            }
+        ],
+        "total": 1649,
+        "address": {
+            "city": "thane",
+            "line1": "thane vartak",
+            "pincode": "400606"
+        },
+        "payment": "UPI (wrrw@1233)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771659556",
+        "date": "2026-02-21 13:09:16",
+        "email": "guest@lookify.com",
+        "items": [
+            {
+                "id": "Baggit Women Brown Handbag",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47359.jpg",
+                "name": "Baggit Women Brown Handbag",
+                "price": 2049,
+                "size": "M"
+            }
+        ],
+        "total": 2049,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Airoli",
+            "pincode": "400708"
+        },
+        "payment": "UPI (jabshab@34)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771659849",
+        "date": "2026-02-21 13:14:09",
+        "email": "guest@lookify.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 1949,
+                "size": "M"
+            }
+        ],
+        "total": 1949,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Airoli",
+            "pincode": "400708"
+        },
+        "payment": "UPI (vgv@234)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771659870",
+        "date": "2026-02-21 13:14:30",
+        "email": "guest@lookify.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 1949,
+                "size": "M"
+            }
+        ],
+        "total": 1949,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "city": "Airoli",
+            "pincode": "400708"
+        },
+        "payment": "UPI (vvav@122)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771660655",
+        "date": "2026-02-21 13:27:35",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "11270",
+                "image": "fashion-dataset/images\\11270.jpg",
+                "name": "11270",
+                "price": 650,
+                "size": "S"
+            }
+        ],
+        "total": 650,
+        "address": {
+            "line1": "anaad nagar",
+            "street": "nagar",
+            "city": "thane",
+            "state": "Maharashtra",
+            "pincode": "400606"
+        },
+        "payment": "UPI (asdf@1233)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771660885",
+        "date": "2026-02-21 13:31:25",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "Buckaroo Men Flores Black Formal Shoes",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/9036.jpg",
+                "name": "Buckaroo Men Flores Black Formal Shoes",
+                "price": 1649,
+                "size": "9"
+            }
+        ],
+        "total": 1649,
+        "address": {
+            "line1": "anaad nagar",
+            "street": "nagar",
+            "city": "thane",
+            "state": "Maharashtra",
+            "pincode": "400606"
+        },
+        "payment": "cod",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771661259",
+        "date": "2026-02-21 13:37:39",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "14024",
+                "image": "fashion-dataset/images\\14024.jpg",
+                "name": "14024",
+                "price": 950,
+                "size": "S"
+            },
+            {
+                "id": "Urban Yoga Men Black Track Pants",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/28499.jpg",
+                "name": "Urban Yoga Men Black Track Pants",
+                "price": 2999,
+                "size": "M"
+            },
+            {
+                "id": "Bulchee Men Brown Padded Chino Belt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/27820.jpg",
+                "name": "Bulchee Men Brown Padded Chino Belt",
+                "price": 1099,
+                "size": "M"
+            }
+        ],
+        "total": 5048,
+        "address": {
+            "line1": "anaad nagar",
+            "street": "nagar",
+            "city": "thane",
+            "state": "Maharashtra",
+            "pincode": "400606"
+        },
+        "payment": "UPI (qwe@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771661333",
+        "date": "2026-02-21 13:38:53",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Baggit Women Brown Handbag",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/47359.jpg",
+                "name": "Baggit Women Brown Handbag",
+                "price": 2049,
+                "size": "M"
+            }
+        ],
+        "total": 2049,
+        "address": {
+            "city": "Mumbai",
+            "line1": "Airoli Sector1 shiv colony5",
+            "pincode": "400708"
+        },
+        "payment": "UPI (araya@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771661554",
+        "date": "2026-02-21 13:42:34",
+        "email": "bbhangare4@gmail.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 549,
+                "size": "M"
+            },
+            {
+                "id": "Basics Men Mid Brown Trousers",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/14689.jpg",
+                "name": "Basics Men Mid Brown Trousers",
+                "price": 2199,
+                "size": "M"
+            }
+        ],
+        "total": 2748,
+        "address": {
+            "line1": "kalyan smmruddhi apt",
+            "street": "samrruddhi",
+            "city": "kalyan",
+            "state": "Maharashtra",
+            "pincode": "400306"
+        },
+        "payment": "UPI (abs@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771661675",
+        "date": "2026-02-21 13:44:35",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Skagen Men Black Watch",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/30039.jpg",
+                "name": "Skagen Men Black Watch",
+                "price": 1449,
+                "size": "M"
+            },
+            {
+                "id": "Fossil Men Quartz Blue Dial Chronograph Watch CH2731",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/46309.jpg",
+                "name": "Fossil Men Quartz Blue Dial Chronograph Watch CH2731",
+                "price": 2299,
+                "size": "M"
+            }
+        ],
+        "total": 3748,
+        "address": {
+            "line1": "Kamala City",
+            "street": "B-building A-wing",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "pincode": "411046"
+        },
+        "payment": "UPI (qwe@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771661947",
+        "date": "2026-02-21 13:49:07",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "Nike Women Black T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/2288.jpg",
+                "name": "Nike Women Black T-shirt",
+                "price": 1449,
+                "size": "M"
+            }
+        ],
+        "total": 1449,
+        "address": {
+            "line1": "Kamala City",
+            "street": "B-building A-wing",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "pincode": "411046"
+        },
+        "payment": "UPI (qwer@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771662039",
+        "date": "2026-02-21 13:50:39",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 949,
+                "size": "M"
+            },
+            {
+                "id": "Proline Men Grey Track Pants",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/26317.jpg",
+                "name": "Proline Men Grey Track Pants",
+                "price": 1199,
+                "size": "M"
+            }
+        ],
+        "total": 2148,
+        "address": {
+            "city": "thane",
+            "line1": "thane vartak",
+            "pincode": "400606"
+        },
+        "payment": "UPI (yash@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771662748",
+        "date": "2026-02-21 14:02:28",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Nike Women Black T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/2288.jpg",
+                "name": "Nike Women Black T-shirt",
+                "price": 449,
+                "size": "M"
+            }
+        ],
+        "total": 449,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "street": "Airoli Sector1 shiv colony5",
+            "city": "Airoli",
+            "state": "Maharashtra",
+            "pincode": "400708"
+        },
+        "payment": "UPI (xgfg222222@)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771662842",
+        "date": "2026-02-21 14:04:02",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 1949,
+                "size": "M"
+            },
+            {
+                "id": "Timex Men Black Dial Watch",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/46521.jpg",
+                "name": "Timex Men Black Dial Watch",
+                "price": 2499,
+                "size": "M"
+            }
+        ],
+        "total": 4448,
+        "address": {
+            "line1": "katraj rajas society",
+            "street": "katraj",
+            "city": "pune",
+            "state": "Maharashtra",
+            "pincode": "400708"
+        },
+        "payment": "UPI (asd@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771663052",
+        "date": "2026-02-21 14:07:32",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "Nike Women Purple Polo T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/38630.jpg",
+                "name": "Nike Women Purple Polo T-shirt",
+                "price": 1049,
+                "size": "M"
+            }
+        ],
+        "total": 1049,
+        "address": {
+            "line1": "katraj rajas society",
+            "street": "katraj",
+            "city": "pune",
+            "state": "Maharashtra",
+            "pincode": "400708"
+        },
+        "payment": "UPI (asas@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771663150",
+        "date": "2026-02-21 14:09:10",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "10007",
+                "image": "fashion-dataset/images\\10007.jpg",
+                "name": "10007",
+                "price": 650,
+                "size": "S"
+            },
+            {
+                "id": "ADIDAS Men Kendall Black Navy Floater",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/5608.jpg",
+                "name": "ADIDAS Men Kendall Black Navy Floater",
+                "price": 2799,
+                "size": "M"
+            }
+        ],
+        "total": 3449,
+        "address": {
+            "line1": "Airoli Sector1 shiv colony5",
+            "street": "",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "pincode": "400708"
+        },
+        "payment": "UPI (ss@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771685894",
+        "date": "2026-02-21 20:28:14",
+        "email": "saylibhangare19@gmail.com",
+        "items": [
+            {
+                "id": "Nike Women Purple Polo T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/38630.jpg",
+                "name": "Nike Women Purple Polo T-shirt",
+                "price": 1049,
+                "size": "M"
+            }
+        ],
+        "total": 1049,
+        "address": {
+            "line1": "Kamala City",
+            "street": "B-building A-wing",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "pincode": "411046"
+        },
+        "payment": "UPI (avbs@344)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771688347",
+        "date": "2026-02-21 21:09:07",
+        "email": "solarterrain1234@gmail.com",
+        "items": [
+            {
+                "id": "Nike Women Black T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/2288.jpg",
+                "name": "Nike Women Black T-shirt",
+                "price": 1749,
+                "size": "M"
+            },
+            {
+                "id": "CASIO Sheen Women Black Dial Chronograph Watch SX024 SHE-5512D-1ADF",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/37323.jpg",
+                "name": "CASIO Sheen Women Black Dial Chronograph Watch SX024 SHE-5512D-1ADF",
+                "price": 3099,
+                "size": "M"
+            }
+        ],
+        "total": 4848,
+        "address": {
+            "line1": "katraj rajas society",
+            "street": "katraj",
+            "city": "pune",
+            "state": "Maharashtra",
+            "pincode": "400708"
+        },
+        "payment": "UPI (xyz@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771690433",
+        "date": "2026-02-21 21:43:53",
+        "email": "aaryabhangare14@gmail.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 1949,
+                "size": "M"
+            }
+        ],
+        "total": 1949,
+        "address": {
+            "line1": "DUBAI",
+            "street": "ABU DHABHI",
+            "city": "DUBAI",
+            "state": "ABU",
+            "pincode": "34254534"
+        },
+        "payment": "UPI (dxdg@123)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771691533",
+        "date": "2026-02-21 22:02:13",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 949,
+                "size": "M"
+            }
+        ],
+        "total": 949,
+        "address": {
+            "line1": "vartak nagar near hp gas pokran road no",
+            "street": "Flat no 1502 Maithili pride",
+            "city": "Thane",
+            "state": "Maharashtra",
+            "pincode": "400606"
+        },
+        "payment": "UPI (yash@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771746811",
+        "date": "2026-02-22 13:23:31",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "Inkfruit Mens Chain Reaction T-shirt",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/1855.jpg",
+                "name": "Inkfruit Mens Chain Reaction T-shirt",
+                "price": 949,
+                "size": "M"
+            }
+        ],
+        "total": 949,
+        "address": {
+            "city": "Thane",
+            "line1": "vartak nagar near hp gas pokran road no",
+            "pincode": "400606",
+            "state": "Maharashtra",
+            "street": "Flat no 1502 Maithili pride"
+        },
+        "payment": "UPI (yash@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771863002",
+        "date": "2026-02-23 21:40:02",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "11387",
+                "image": "fashion-dataset/images\\11387.jpg",
+                "name": "11387",
+                "price": 650,
+                "size": "S"
+            },
+            {
+                "id": "Gini Jony Boys Brown Shorts",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/39759.jpg",
+                "name": "Gini Jony Boys Brown Shorts",
+                "price": 1899,
+                "size": "M"
+            },
+            {
+                "id": "Lee Men Fashion Black Wallet",
+                "image": "http://127.0.0.1:8000/fashion-dataset/images/25437.jpg",
+                "name": "Lee Men Fashion Black Wallet",
+                "price": 799,
+                "size": "M"
+            }
+        ],
+        "total": 3348,
+        "address": {
+            "city": "Thane",
+            "line1": "vartak nagar near hp gas pokran road no",
+            "pincode": "400606",
+            "state": "Maharashtra",
+            "street": "Flat no 1502 Maithili pride"
+        },
+        "payment": "UPI (yash@ybl)",
+        "status": "Confirmed"
+    },
+    {
+        "order_id": "ORD-1771864542",
+        "date": "2026-02-23 22:05:42",
+        "email": "yashbhosale8105@gmail.com",
+        "items": [
+            {
+                "id": "10646",
+                "image": "fashion-dataset/images\\10646.jpg",
+                "name": "10646",
+                "price": 1100,
+                "size": "S"
+            }
+        ],
+        "total": 1100,
+        "address": {
+            "city": "Thane",
+            "line1": "vartak nagar near hp gas pokran road no",
+            "pincode": "400606",
+            "state": "Maharashtra",
+            "street": "Flat no 1502 Maithili pride"
+        },
+        "payment": "UPI (yash@ybl)",
+        "status": "Confirmed"
+    }
+]

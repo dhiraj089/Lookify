@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended for You | Lookify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            padding: 20px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, #4ade80, #22c55e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .back-btn {
+            background: rgba(74, 222, 128, 0.2);
+            color: #4ade80;
+            border: 2px solid #4ade80;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .back-btn:hover {
+            background: #4ade80;
+            color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(74, 222, 128, 0.4);
+        }
+
+        /* MAIN CONTENT */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(74, 222, 128, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(34, 197, 94, 0.1) 0%, transparent 50%);
+            animation: gradientShift 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 0.6;
+            }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            background: linear-gradient(135deg, #fff 0%, #4ade80 50%, #22c55e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            0% {
+                text-shadow: 0 0 20px rgba(74, 222, 128, 0.5);
+            }
+
+            100% {
+                text-shadow: 0 0 40px rgba(74, 222, 128, 0.8), 0 0 60px rgba(34, 197, 94, 0.4);
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-section {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* RECOMMENDATIONS GRID */
+        .recommendations {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 50px;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 60px;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .product-card {
+            background: #111;
+            border-radius: 24px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid #222;
+            position: relative;
+            transform-origin: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-20px) scale(1.02);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(74, 222, 128, 0.3);
+            border-color: #4ade80;
+        }
+
+        .product-image {
+            height: 320px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+            position: relative;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.1);
+        }
+
+        .product-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(74, 222, 128, 0.1), rgba(34, 197, 94, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-card:hover .product-overlay {
+            opacity: 1;
+        }
+
+        .product-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .product-price {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #4ade80;
+            margin-bottom: 15px;
+        }
+
+        .product-sizes {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart {
+            background: linear-gradient(135deg, #4ade80, #22c55e);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .add-to-cart:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(74, 222, 128, 0.4);
+        }
+
+        .add-to-cart:active {
+            transform: translateY(0);
+        }
+
+        /* ANIMATIONS */
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .product-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .product-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .product-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        /* LOADING */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            gap: 20px;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(74, 222, 128, 0.2);
+            border-top: 4px solid #4ade80;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .recommendations {
+                padding: 60px 20px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        /* EMPTY STATE */
+        .empty-state {
+            text-align: center;
+            padding: 100px 20px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="nav-inner">
+            <div class="logo">LOOKIFY</div>
+            <button class="back-btn" onclick="window.close()">
+                <i class="fas fa-arrow-left"></i> Back to Cart
+            </button>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>People who bought this also bought...</h1>
+        <p class="hero-subtitle">
+            Discover amazing recommendations based on your selection.
+            Limited time offers just for you!
+        </p>
+        <div class="cta-section">
+            <button onclick="scrollToRecommendations()" class="back-btn" style="font-size: 1.1rem;">
+                <i class="fas fa-chevron-down"></i> Explore Recommendations
+            </button>
+        </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section class="recommendations">
+        <h2 class="section-title fade-in">🔥 TOP RECOMMENDATIONS</h2>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Personalizing recommendations for you...</p>
+        </div>
+
+        <div id="products-grid" class="grid" style="display: none;"></div>
+
+        <div id="empty-state" class="empty-state" style="display: none;">
+            <i class="fas fa-heart-broken" style="font-size: 64px; margin-bottom: 20px; opacity: 0.5;"></i>
+            <h3>No recommendations at this moment</h3>
+            <p>Check back later for amazing deals!</p>
+        </div>
+    </section>
+
+    <script>
+        // LOOKIFY FASHION DATASET (SHUFFLED)
+        const lookifyDataset = [
+            { name: "Premium Denim Jacket", price: 2499, sizes: "S, M, L, XL", img: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&fit=crop" },
+            { name: "Slim Fit Chinos", price: 1299, sizes: "28, 30, 32, 34", img: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=400&fit=crop" },
+            { name: "Leather Chelsea Boots", price: 3499, sizes: "7-11", img: "https://images.unsplash.com/photo-1567581935884-3349723552ca?w=400&fit=crop" },
+            { name: "Oversized Hoodie", price: 899, sizes: "S, M, L", img: "https://images.unsplash.com/photo-1542272163474-6864f9cf17ab?w=400&fit=crop" },
+            { name: "Classic Aviator Sunglasses", price: 1799, sizes: "One Size", img: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&fit=crop" },
+            { name: "Cotton Cargo Pants", price: 1499, sizes: "28-36", img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&fit=crop" },
+            { name: "Minimalist Watch", price: 2999, sizes: "Standard", img: "https://images.unsplash.com/photo-1524592094714-0f065e450b11?w=400&fit=crop" },
+            { name: "Polo Neck T-Shirt", price: 599, sizes: "S-XXL", img: "https://images.unsplash.com/photo-1533633918667-f8a6ae4d8de9?w=400&fit=crop" },
+            { name: "Canvas Sneakers", price: 1199, sizes: "6-11", img: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&fit=crop" },
+            { name: "Sheepskin Jacket", price: 3999, sizes: "S, M, L", img: "https://images.unsplash.com/photo-1551024506-c4721d1f2a4e?w=400&fit=crop" },
+            { name: "Slim Fit Shirt", price: 799, sizes: "S-XXL", img: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=400&fit=crop" },
+            { name: "Baseball Cap", price: 499, sizes: "One Size", img: "https://images.unsplash.com/photo-1574179208501-10a7e881a3f5?w=400&fit=crop" }
+        ];
+
+        // INIT
+        function init() {
+            // Simulate loading
+            setTimeout(() => {
+                document.getElementById('loading').style.display = 'none';
+                loadRecommendations();
+            }, 1500);
+        }
+
+        function shuffle(array) {
+            return array.sort(() => Math.random() - 0.5).slice(0, 12);
+        }
+
+        function scrollToRecommendations() {
+            document.querySelector('.recommendations').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function loadRecommendations() {
+            const shuffledProducts = shuffle(lookifyDataset);
+            renderProducts(shuffledProducts);
+        }
+
+        function renderProducts(products) {
+            const container = document.getElementById('products-grid');
+            container.innerHTML = '';
+
+            products.forEach((product, index) => {
+                const card = document.createElement('div');
+                card.className = 'product-card fade-in';
+                card.style.animationDelay = `${index * 0.1}s`;
+
+                card.innerHTML = `
+                    <div class="product-overlay"></div>
+                    <img src="${product.img}" alt="${product.name}" class="product-image" loading="lazy">
+                    <div class="product-info">
+                        <div class="product-name">${product.name}</div>
+                        <div class="product-sizes">${product.sizes}</div>
+                        <div class="product-price">₹${product.price.toLocaleString('en-IN')}</div>
+                        <button class="add-to-cart" onclick="addToCart('${product.name}', ${product.price})">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+
+            container.style.display = 'grid';
+        }
+
+        function addToCart(name, price) {
+            // Simulate add to cart
+            const btn = event.target.closest('.add-to-cart');
+            const originalText = btn.innerHTML;
+
+            btn.innerHTML = '<i class="fas fa-check"></i> Added!';
+            btn.style.background = '#10b981';
+
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+            }, 1500);
+
+            // Here you would normally add to localStorage cart
+            console.log('Added to cart:', name, price);
+        }
+
+        // START
+        init();
+    </script>
+</body>
+
+</html>

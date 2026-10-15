@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual Env
+venv/
+env/
+.env
+
+# Dataset (Too large for GitHub)
+fashion-dataset/
+styles/
+images/
+
+# Temporary / Uploads
+temp/
+temp_upload/
+upload/
+test_images/
+query_temp.jpg
+smtp_debug.log
+
+# Large Models (Will use Git LFS for these)
+# Remove the line below if you don't want to use LFS
+# *.pkl
+
+# OS
+.DS_Store
+Thumbs.db
+*.zip
+*.pdf
+ *.csv

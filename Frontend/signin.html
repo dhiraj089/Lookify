@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookify AI | Premium Fashion</title>
+    <!-- Google Fonts: Outfit & Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Cinzel:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --text: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.7);
+            --bg-glass: rgba(0, 0, 0, 0.85);
+            --border: rgba(255, 255, 255, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            /* High Fashion Wardrobe/Studio Background */
+            background: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop') no-repeat center center fixed;
+            background-size: cover;
+            filter: grayscale(100%);
+            /* Monochrome */
+            color: var(--text);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            /* Custom Cursor */
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='white' stroke='black' stroke-width='1'%3E%3Cpath d='M20.38 3.46L16 2l-4 6-4-6-4.38 1.46a2 2 0 0 0-1.15 1.13L1 10h5v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h5l-1.47-5.41a2 2 0 0 0-1.15-1.13z'/%3E%3C/svg%3E") 16 16, auto;
+        }
+
+        /* Background Overlay - Darker for more contrast */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* --- MAIN LAYOUT --- */
+        main {
+            position: relative;
+            z-index: 10;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 120px;
+            max-width: 1800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Hero Content (Left) */
+        .hero-content {
+            max-width: 650px;
+            animation: fadeSlideRight 1s ease;
+        }
+
+        .brand-logo {
+            position: absolute;
+            top: 50px;
+            left: 80px;
+            z-index: 100;
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+            font-weight: 800;
+            color: #fff;
+            background: transparent;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            line-height: 1;
+        }
+
+        .hero-content h2 {
+            font-size: 2rem;
+            font-weight: 200;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 6.5rem;
+            line-height: 0.95;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.8);
+            font-weight: 400;
+        }
+
+        .line-break {
+            width: 100px;
+            height: 1px;
+            background: #fff;
+            margin: 30px 5px;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-left: 5px;
+            max-width: 450px;
+            line-height: 1.7;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        /* Auth Section (Right) */
+        .auth-section {
+            width: 420px;
+            animation: fadeSlideLeft 1s ease;
+        }
+
+        .glass-panel {
+            background: var(--bg-glass);
+            border: 1px solid var(--border);
+            padding: 50px;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.9);
+            position: relative;
+        }
+
+        .logo p {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+            font-size: 0.75rem;
+            opacity: .7;
+        }
+
+        /* Forms */
+        form {
+            display: none;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        form.active {
+            display: flex;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 5px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--border);
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #fff;
+        }
+
+        /* Placeholders from Design */
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        button {
+            padding: 15px;
+            background: #fff;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-family: inherit;
+            text-transform: uppercase;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+        }
+
+        .switch {
+            text-align: center;
+            font-size: .75rem;
+            margin-top: 10px;
+            color: var(--text-muted);
+        }
+
+        .switch a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            cursor: pointer;
+        }
+
+        .separator {
+            text-align: center;
+            font-size: .7rem;
+            color: var(--text-muted);
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        /* Success View */
+        #success {
+            display: none;
+            text-align: center;
+        }
+
+        #success h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            margin-top: -10px;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        .form-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            border-bottom: 1px solid #fff;
+        }
+
+        /* Animations */
+        @keyframes fadeSlideRight {
+            from {
+                opacity: 0;
+                transform: translateX(-80px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeSlideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(80px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="brand-logo">LOOKIFY</div>
+
+    <!-- Main Content Split Layout -->
+    <main>
+        <!-- Left Side: Hero Text -->
+        <section class="hero-content">
+            <h2>The Art of</h2>
+            <h1>Modern<br>Couture</h1>
+            <div class="line-break"></div>
+            <p>Experience the new era of style. Curated elegance for the modern visionary.</p>
+        </section>
+
+        <!-- Right Side: Login Panel -->
+        <section class="auth-section">
+            <div class="glass-panel">
+
+                <!-- LOGIN -->
+                <form id="login" class="active">
+                    <div class="logo">
+                        <p>MEMBER ACCESS</p>
+                    </div>
+
+                    <div class="input-group">
+                        <input id="loginEmail" type="email" placeholder="EMAIL ADDRESS" required>
+                    </div>
+                    <div class="input-group">
+                        <input id="loginPass" type="password" placeholder="PASSWORD" required>
+                    </div>
+
+                    <div class="form-footer">
+                        <label style="cursor: pointer;"><input type="checkbox" style="width:auto;margin-right:5px;">
+                            Remember</label>
+                        <a href="#">Recovery</a>
+                    </div>
+
+                    <button id="loginBtn">ENTER STUDIO</button>
+
+                    <div class="separator">OR</div>
+
+                    <div class="switch">New user? <a href="#" onclick="showSignup()">Apply Now</a></div>
+                </form>
+
+                <!-- SIGNUP -->
+                <form id="signup">
+                    <div class="logo">
+                        <p>BECOME A MEMBER</p>
+                    </div>
+
+                    <div class="input-group">
+                        <input id="name" placeholder="FULL NAME" required>
+                    </div>
+                    <div class="input-group">
+                        <input id="email" type="email" placeholder="EMAIL ADDRESS" required>
+                    </div>
+                    <div class="input-group">
+                        <input id="pass" type="password" placeholder="CREATE PASSWORD" required>
+                    </div>
+
+                    <button id="signupBtn">JOIN LOOKIFY</button>
+
+                    <div class="switch">Already a member? <a href="#" onclick="showLogin()">Access Account</a></div>
+                </form>
+
+                <!-- SUCCESS -->
+                <div id="success">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">✨</div>
+                    <h2 id="userName"></h2>
+                    <p id="userEmail"></p>
+                    <p style="margin-top:20px;opacity:.7">Redirecting to Studio...</p>
+                    <div
+                        style="margin-top:20px;border:3px solid rgba(255,255,255,0.3);border-radius:50%;border-top:3px solid #fff;width:20px;height:20px;animation:spin 1s linear infinite;display:inline-block;">
+                    </div>
+                    <div style="margin-top:30px;">
+                        <button onclick="window.location.href='index.html'"
+                            style="background:#fff; color:#000; padding:10px 30px; font-size:0.8rem;">
+                            GO TO STUDIO NOW
+                        </button>
+                    </div>
+                    <style>
+                        @keyframes spin {
+                            0% {
+                                transform: rotate(0deg)
+                            }
+
+                            100% {
+                                transform: rotate(360deg)
+                            }
+                        }
+                    </style>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- LOGIC -->
+    <script>
+        // --- 0. INITIAL CHECKS ---
+        if (window.location.protocol === 'file:') {
+            alert("⚠️ Please access this page via http://127.0.0.1:8000/signin.html. \nOpening the file directly will cause connection errors.");
+        }
+
+        const loginForm = document.getElementById('login');
+        const signupForm = document.getElementById('signup');
+        const success = document.getElementById('success');
+
+        // UI Toggle Logic
+        function showSignup() {
+            loginForm.classList.remove('active');
+            signupForm.classList.add('active');
+        }
+        function showLogin() {
+            signupForm.classList.remove('active');
+            loginForm.classList.add('active');
+        }
+
+        // SIGNUP Logic (Backend Integration)
+        signupForm.onsubmit = async e => {
+            e.preventDefault();
+            const signupBtn = document.getElementById('signupBtn');
+            signupBtn.disabled = true;
+            signupBtn.innerText = "CREATING ACCOUNT...";
+
+            const user = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('pass').value,
+                phone: '',
+                dob: '',
+                gender: ''
+            };
+
+            try {
+                // Keep local addresses to merge after login
+                const localAddresses = JSON.parse(localStorage.getItem('lookifyAddressData')) || {};
+
+                // Clear session data but keep local addresses
+                localStorage.removeItem('lookify_logged_in');
+                localStorage.removeItem('lookify_user');
+                localStorage.removeItem('lookifyUserData');
+
+                const res = await fetch('http://127.0.0.1:8000/api/signup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(user)
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    // Keep session info
+                    localStorage.setItem("lookify_logged_in", "true");
+                    localStorage.setItem("lookify_user", JSON.stringify(user));
+                    localStorage.setItem("lookifyUserData", JSON.stringify(user));
+                    // Merge guest addresses if they exist (Non-blocking)
+                    if (Object.keys(localAddresses).some(k => localAddresses[k])) {
+                        const mergedAddresses = { ...(user.addresses || {}), ...localAddresses };
+                        localStorage.setItem("lookifyAddressData", JSON.stringify(mergedAddresses));
+                        // Sync merged addresses to backend (async)
+                        fetch('http://127.0.0.1:8000/api/update_user', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ email: user.email, addresses: mergedAddresses })
+                        }).catch(e => console.error("Address sync failed", e));
+                    }
+
+                    showSuccess(user);
+                } else {
+                    alert("Error: " + (data.error || "Signup failed"));
+                    signupBtn.disabled = false;
+                    signupBtn.innerText = "JOIN LOOKIFY";
+                }
+            } catch (err) {
+                console.error("Signup Catch Block:", err);
+                alert("Connection failed: " + err.message + "\nMake sure server is running on port 8000.");
+                const signupBtn = document.getElementById('signupBtn');
+                signupBtn.disabled = false;
+                signupBtn.innerText = "JOIN LOOKIFY";
+            }
+        };
+
+        // LOGIN Logic (Backend Integration)
+        loginForm.onsubmit = async e => {
+            e.preventDefault();
+            const loginBtn = document.getElementById('loginBtn');
+            loginBtn.disabled = true;
+            loginBtn.innerText = "AUTHORIZING...";
+
+            const inputEmail = document.getElementById('loginEmail').value;
+            const inputPass = document.getElementById('loginPass').value;
+
+            try {
+                // Keep local addresses to merge after login
+                const localAddresses = JSON.parse(localStorage.getItem('lookifyAddressData')) || {};
+
+                // Clear session data but keep local addresses
+                localStorage.removeItem('lookify_logged_in');
+                localStorage.removeItem('lookify_user');
+                localStorage.removeItem('lookifyUserData');
+
+                const res = await fetch('http://127.0.0.1:8000/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: inputEmail, password: inputPass })
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    const user = data.user;
+                    // Success - Store session locally
+                    localStorage.setItem("lookify_logged_in", "true");
+                    localStorage.setItem("lookify_user", JSON.stringify(user));
+                    localStorage.setItem("lookifyUserData", JSON.stringify(user));
+
+                    // Sync addresses from backend and MERGE with captured local ones
+                    const backendAddresses = user.addresses || { home: '', work: '', other: '' };
+                    const mergedAddresses = { ...backendAddresses, ...localAddresses };
+                    localStorage.setItem("lookifyAddressData", JSON.stringify(mergedAddresses));
+
+                    // Sync merged back if local addresses were present (Non-blocking)
+                    if (Object.keys(localAddresses).some(k => localAddresses[k])) {
+                        fetch('http://127.0.0.1:8000/api/update_user', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ email: user.email, addresses: mergedAddresses })
+                        }).catch(e => console.error("Address sync failed", e));
+                    }
+
+                    // Sync wishlist from backend
+                    const backendWishlist = user.wishlist || [];
+                    localStorage.setItem("lookify_wishlist", JSON.stringify(backendWishlist));
+
+                    showSuccess(user);
+                } else {
+                    alert("Invalid credentials. Please try again.");
+                    loginBtn.disabled = false;
+                    loginBtn.innerText = "ENTER STUDIO";
+                }
+            } catch (err) {
+                console.error("Login Catch Block:", err);
+                alert("Connection failed: " + err.message + "\nMake sure server is running on port 8000.");
+                const loginBtn = document.getElementById('loginBtn');
+                loginBtn.disabled = false;
+                loginBtn.innerText = "ENTER STUDIO";
+            }
+        };
+
+        // Google Button Placeholder
+        const googleBtn = document.querySelector('.google-btn');
+        if (googleBtn) {
+            googleBtn.addEventListener('click', () => {
+                alert("Google Access requires backend integration. Place your OAuth logic here.");
+            });
+        }
+
+        function showSuccess(user) {
+            console.log("Login successful, showing success screen", user);
+            loginForm.style.display = "none";
+            signupForm.style.display = "none";
+            success.style.display = "block";
+
+            document.getElementById('userName').textContent = `Welcome, ${user.name || 'User'}`;
+            document.getElementById('userEmail').textContent = user.email || '';
+
+            // Redirect after success (1.5s for feel)
+            setTimeout(() => {
+                console.log("Auto-redirecting to index.html...");
+                window.location.replace("index.html");
+            }, 1500);
+        }
+    </script>
+
+</body>
+
+</html>

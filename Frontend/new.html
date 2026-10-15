@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOOKIFY – Contemporary Fashion</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0e0e0e;
+      --text: #ffffff;
+      --muted: rgba(255, 255, 255, 0.65);
+      --accent: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 30px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent);
+    }
+
+    nav h1 {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 4px;
+      font-size: 1.6rem;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: .9rem;
+      letter-spacing: 2px;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      background: #fff;
+      left: 0;
+      bottom: -6px;
+      transition: .3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=2070') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0 120px;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, .55);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 700px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .hero-content h2 {
+      font-size: .9rem;
+      letter-spacing: 6px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 5.5rem;
+      line-height: .95;
+      margin-bottom: 30px;
+    }
+
+    .hero-content p {
+      max-width: 480px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .hero-content a {
+      display: inline-block;
+      padding: 16px 40px;
+      border: 1px solid #fff;
+      color: #000;
+      background: #fff;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-size: .8rem;
+      transition: .3s;
+    }
+
+    .hero-content a:hover {
+      background: transparent;
+      color: #fff;
+    }
+
+    /* SECTION */
+    section {
+      padding: 140px 120px;
+    }
+
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      max-width: 500px;
+      margin-bottom: 80px;
+    }
+
+    /* COLLECTION GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      height: 480px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card span {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      font-family: 'Cinzel', serif;
+      letter-spacing: 3px;
+    }
+
+    /* LOOKBOOK */
+    .lookbook {
+      background: #111;
+      display: flex;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .lookbook img {
+      width: 50%;
+    }
+
+    .lookbook div {
+      max-width: 420px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 80px;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      display: flex;
+      justify-content: space-between;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media(max-width: 900px) {
+      nav {
+        padding: 20px 30px;
+      }
+
+      .hero {
+        padding: 0 40px;
+      }
+
+      .hero-content h1 {
+        font-size: 3.5rem;
+      }
+
+      section {
+        padding: 100px 40px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .lookbook {
+        flex-direction: column;
+      }
+
+      .lookbook img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>LOOKIFY</h1>
+    <ul>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Collections</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h2>THE ART OF STYLE</h2>
+      <h1>Modern<br>Luxury Wear</h1>
+      <p>Curated silhouettes, refined textures, and contemporary fashion crafted for the bold and expressive.</p>
+      <a href="#">EXPLORE COLLECTION</a>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Featured Collections</h2>
+    <p class="section-sub">A refined edit inspired by modern couture and timeless elegance.</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" />
+        <span>WOMENSWEAR</span>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" />
+        <span>MENSWEAR</span>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb" />
+        <span>ESSENTIALS</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="lookbook">
+    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" />
+    <div>
+      <h2 class="section-title">The Lookbook</h2>
+      <p class="section-sub">A visual story of elegance, minimalism, and bold expression.</p>
+      <a href="#" style="color:#fff;border-bottom:1px solid #fff;text-decoration:none;">VIEW LOOKBOOK →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 LOOKIFY</p>
+    <p>Privacy · Terms · Contact</p>
+  </footer>
+
+</body>
+
+</html>

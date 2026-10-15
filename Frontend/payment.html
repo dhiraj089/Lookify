@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Lookify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+
+        /* STEPS UI */
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+
+        .step.active {
+            opacity: 1;
+            color: #4ade80;
+            font-weight: 600;
+        }
+
+        .step-num {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid currentColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        /* SECTIONS */
+        .checkout-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .checkout-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-box {
+            background: #111;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            margin-bottom: 25px;
+        }
+
+        .section-box h2 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #ddd;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* GRID */
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 30px;
+        }
+
+        /* ADDRESS CARDS */
+        .address-list {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        .address-card {
+            background: #000;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+            position: relative;
+        }
+
+        .address-card:hover {
+            border-color: #666;
+        }
+
+        .address-card.selected {
+            border-color: #4ade80;
+            background: rgba(74, 222, 128, 0.05);
+        }
+
+        .check-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: none;
+            color: #4ade80;
+        }
+
+        .address-card.selected .check-icon {
+            display: block;
+        }
+
+        /* SUMMARY ITEMS */
+        .order-item {
+            display: flex;
+            gap: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #222;
+            margin-bottom: 15px;
+        }
+
+        .order-item img {
+            width: 60px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+
+        /* PAYMENT METHODS */
+        .payment-method {
+            padding: 15px;
+            border: 1px solid #333;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: 0.2s;
+        }
+
+        .payment-method:hover {
+            background: #1a1a1a;
+        }
+
+        .payment-method.selected {
+            border-color: #4ade80;
+            background: rgba(74, 222, 128, 0.05);
+        }
+
+        .payment-method input {
+            accent-color: #4ade80;
+            width: 18px;
+            height: 18px;
+        }
+
+        /* BUTTONS */
+        .btn-primary {
+            width: 100%;
+            padding: 15px;
+            background: #fff;
+            color: #000;
+            border: none;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: #4ade80;
+        }
+
+        .btn-secondary {
+            background: #222;
+            color: #fff;
+            border: 1px solid #444;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        /* FORM */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            background: #000;
+            border: 1px solid #333;
+            color: #fff;
+            border-radius: 6px;
+        }
+
+        /* SUCCESS PAGE */
+        .success-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .success-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: pop 0.5s;
+            display: inline-block;
+        }
+
+        .order-id-badge {
+            background: #222;
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 20px 0;
+            font-family: monospace;
+            letter-spacing: 1px;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(0);
+            }
+
+            70% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media(max-width: 768px) {
+            .split-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <h1 id="page-title">Checkout</h1>
+
+        <!-- STEPS -->
+        <div class="steps" id="progress-steps">
+            <div class="step active" id="step-1">
+                <div class="step-num">1</div> Address
+            </div>
+            <div class="step" id="step-2">
+                <div class="step-num">2</div> Payment
+            </div>
+            <div class="step" id="step-3">
+                <div class="step-num">3</div> Done
+            </div>
+        </div>
+
+        <!-- ======================= STEP 1: ADDRESS ======================= -->
+        <div id="section-address" class="checkout-section active">
+            <div class="split-grid">
+                <div class="left-col">
+                    <div class="section-box">
+                        <h2>Select Delivery Address</h2>
+                        <div id="saved-addresses" class="address-list"></div>
+                        <button class="btn-secondary" onclick="toggleNewAddress()">+ Add New Address</button>
+                    </div>
+
+                    <div class="section-box" id="new-address-form" style="display:none;">
+                        <h2>Add New Address</h2>
+                        <div class="form-group">
+                            <label>Address Line 1</label>
+                            <input type="text" id="new-addr-line1" placeholder="Flat, House no., Building">
+                        </div>
+                        <div class="form-group">
+                            <label>Street / Area</label>
+                            <input type="text" id="new-addr-street" placeholder="Street, Sector">
+                        </div>
+                        <div style="display:flex; gap:15px;">
+                            <div class="form-group" style="flex:1">
+                                <label>City</label>
+                                <input type="text" id="new-addr-city">
+                            </div>
+                            <div class="form-group" style="flex:1">
+                                <label>State</label>
+                                <input type="text" id="new-addr-state">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Pincode</label>
+                            <input type="text" id="new-addr-pincode">
+                        </div>
+                        <label style="font-size:12px; color:#888; display:block; margin-bottom:5px;">Save As</label>
+                        <div style="display:flex; gap:10px;">
+                            <button class="btn-secondary" onclick="saveNewAddress('home')">Home</button>
+                            <button class="btn-secondary" onclick="saveNewAddress('work')">Work</button>
+                            <button class="btn-secondary" onclick="saveNewAddress('other')">Other</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-col">
+                    <div class="section-box">
+                        <h2>Order Summary</h2>
+                        <div id="cart-items-summary"></div>
+                        <div class="price-row"><span>Subtotal</span><span id="summary-subtotal">₹0</span></div>
+                        <div class="price-row"><span>Shipping</span><span style="color:#4ade80">Free</span></div>
+                        <div class="total-row"><span>Total</span><span id="summary-total">₹0</span></div>
+                        <button class="btn-primary" onclick="goToPayment()">PROCEED TO PAYMENT ➔</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================= STEP 2: PAYMENT ======================= -->
+        <div id="section-payment" class="checkout-section">
+            <div class="split-grid">
+                <div class="left-col">
+                    <div class="section-box">
+                        <h2>Select Payment Method</h2>
+                        <div class="payment-method selected" onclick="selectMethod('upi')">
+                            <input type="radio" name="method" checked>
+                            <div><b>UPI / QR Code</b>
+                                <p style="font-size:12px; color:#888;">GPay, PhonePe, Paytm</p>
+                            </div>
+                        </div>
+                        <div class="payment-method" onclick="selectMethod('cod')">
+                            <input type="radio" name="method">
+                            <div><b>Cash on Delivery</b>
+                                <p style="font-size:12px; color:#888;">Pay upon receipt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-col">
+                    <div class="section-box">
+                        <h2 id="pay-mode-title">Scan to Pay</h2>
+
+                        <!-- Receipt email is now auto-fetched from user session -->
+
+                        <h1 style="text-align:center; border:none; color:#4ade80; margin:10px 0;"
+                            id="pay-display-total">₹0</h1>
+
+                        <!-- UPI SECTION -->
+                        <div id="upi-area" style="text-align:center;">
+                            <div
+                                style="background:#fff; padding:15px; border-radius:8px; width:fit-content; margin:0 auto 10px;">
+                                <div id="qrcode"></div>
+                            </div>
+                            <p style="font-size:12px; color:#888; margin-bottom:15px;">Scan to pay with any UPI App</p>
+
+                            <!-- NEW: UPI ID Input -->
+                            <div style="text-align:left; border-top:1px solid #333; padding-top:15px; margin-top:15px;">
+                                <label style="font-size:12px; color:#aaa; display:block; margin-bottom:5px;">Or Enter
+                                    UPI
+                                    ID</label>
+                                <div style="display:flex; gap:10px;">
+                                    <input type="text" id="upi-id-input" placeholder="e.g. mobile@upi"
+                                        style="flex:1; padding:10px; background:#222; border:1px solid #333; color:#fff; border-radius:6px;">
+                                    <button class="btn-secondary"
+                                        style="margin-top:0; width:auto; border:1px solid #444;"
+                                        onclick="verifyUpiId()">Verify</button>
+                                </div>
+                                <p id="upi-msg" style="font-size:11px; color:#4ade80; margin-top:5px; display:none;">✓
+                                    Verified!</p>
+                            </div>
+                        </div>
+
+                        <!-- COD SECTION -->
+                        <div id="cod-area" style="display:none; text-align:center; padding:20px;">
+                            <div style="font-size:40px;">🚚</div>
+                            <p style="margin-top:10px;">Pay via Cash or UPI on delivery.</p>
+                        </div>
+
+                        <button class="btn-primary" id="btn-place-order" onclick="placeOrder()">VERIFY & PAY</button>
+                        <button class="btn-secondary" style="width:100%; border:none; background:none;"
+                            onclick="goBackToAddress()">← Back to Address</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================= STEP 3: SUCCESS ======================= -->
+        <div id="section-success" class="checkout-section">
+            <div class="success-container">
+                <div class="success-icon">🎉</div>
+                <h1 style="border:none;">Order Confirmed!</h1>
+                <p style="color:#aaa; max-width:400px; margin:0 auto;">Thank you for shopping with Lookify. Your order
+                    has been placed successfully and a confirmation email has been sent to <span id="conf-email"
+                        style="color:#fff;font-weight:bold;"></span>.</p>
+
+                <div class="order-id-badge">Order #<span id="final-order-id">...</span></div>
+
+                <div style="display:flex; gap:15px; justify-content:center;">
+                    <a href="/profile.html"><button class="btn-secondary">View Order</button></a>
+                    <a href="/index.html"><button class="btn-primary" style="margin-top:0; width:auto;">Continue
+                            Shopping</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // --- 0. INITIAL CHECKS & DATA ---
+        if (window.location.protocol === 'file:') {
+            document.body.innerHTML = `<h1 style="color:red;text-align:center;margin-top:20vh;">⚠️ Check URL</h1><p style="text-align:center;">Please use 127.0.0.1:8000</p>`;
+            throw new Error("Localhost Only");
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        let token = urlParams.get('token');
+        let rawData = urlParams.get('data');
+        let cartData = [];
+
+        async function fetchCartData() {
+            if (token) {
+                try {
+                    // CHANGED: Fetch from Port 8000 (server.py)
+                    const res = await fetch(`http://127.0.0.1:8000/api/get_cart/${token}`);
+                    if (res.ok) {
+                        cartData = await res.json();
+                        sessionStorage.setItem('temp_cart', JSON.stringify(cartData));
+                    }
+                } catch (e) { console.error("Token fetch failed", e); }
+            } else if (rawData) {
+                cartData = JSON.parse(decodeURIComponent(rawData));
+                sessionStorage.setItem('temp_cart', JSON.stringify(cartData));
+            } else {
+                cartData = JSON.parse(sessionStorage.getItem('temp_cart') || '[]');
+            }
+
+            if (cartData.length === 0) {
+                console.warn("No cart data found. Using dummy data.");
+                // cartData = [{ name: "Sample Tee", price: 1999, size: "M", image: "https://via.placeholder.com/150" }];
+            }
+            renderCartSummary();
+        }
+
+        const user = JSON.parse(localStorage.getItem('lookifyUserData')) || JSON.parse(localStorage.getItem('lookify_user')) || { email: 'guest@lookify.com' };
+        let addresses = JSON.parse(localStorage.getItem('lookifyAddressData')) || {};
+        let selectedAddress = null;
+        let selectedPayment = 'upi';
+        let totalAmount = 0;
+
+        // --- 1. RENDER FUNCTIONS ---
+
+        function init() {
+            fetchCartData().then(() => {
+                renderAddresses();
+                autoSelectAddress();
+            });
+        }
+
+        function handleImageError(img, rawPath) {
+            // Extract filename safely
+            const safePath = (rawPath || '').replace(/\\/g, '/');
+            const filename = safePath.split('/').pop();
+
+            if (!filename) {
+                img.src = 'https://via.placeholder.com/60?text=No+Img';
+                img.onerror = null;
+                return;
+            }
+
+            // Priority list of paths to try
+            const attempts = [
+                `../fashion-dataset/images/${filename}`,   // Relative from Frontend (Localhost/File)
+                `/fashion-dataset/images/${filename}`,     // Absolute from Root
+                `fashion-dataset/images/${filename}`,      // Direct Relative
+                `../images/${filename}`,                   // Alternative structure
+                `/images/${filename}`                      // Alternative structure
+            ];
+
+            let count = parseInt(img.getAttribute('data-retry') || '0');
+
+            if (count < attempts.length) {
+                img.setAttribute('data-retry', count + 1);
+                img.src = attempts[count];
+                console.log(`[Image Fix] Retrying (${count + 1}/${attempts.length}): ${attempts[count]}`);
+            } else {
+                img.src = 'https://via.placeholder.com/60?text=No+Img';
+                img.onerror = null; // Stop trying
+            }
+        }
+
+        function renderCartSummary() {
+            const container = document.getElementById('cart-items-summary');
+            totalAmount = 0;
+            container.innerHTML = '';
+
+            cartData.forEach(item => {
+                totalAmount += parseInt(item.price);
+
+                // Prepare initial path
+                let rawImg = item.image || item.img || '';
+                // Normalize slashes
+                rawImg = rawImg.replace(/\\/g, '/');
+
+                // If just ID/filename, construct default path
+                if (rawImg && !rawImg.includes('/')) {
+                    if (!rawImg.match(/\.(jpg|png|jpeg)$/i)) rawImg += '.jpg';
+                    rawImg = 'fashion-dataset/images/' + rawImg;
+                }
+
+                // Initial source try
+                let displaySrc = rawImg;
+                if (!displaySrc.startsWith('http')) {
+                    // Try absolute first if it looks relative
+                    if (!displaySrc.startsWith('/') && !displaySrc.startsWith('.')) {
+                        displaySrc = '/' + displaySrc;
+                    }
+                }
+
+                container.innerHTML += `
+                    <div class="order-item">
+                        <img src="${displaySrc}" 
+                             onerror="handleImageError(this, '${rawImg}')"
+                             alt="${item.name}">
+                        <div style="flex:1;">
+                            <h4 style="font-size:14px;">${item.name}</h4>
+                            <p style="color:#888; font-size:10px; margin-bottom:2px;">ID: ${item.id || item.name}</p>
+                            <p style="color:#888; font-size:12px;">Size: ${item.size}</p>
+                            <div style="text-align:right; font-size:14px; font-weight:bold;">₹${item.price}</div>
+                            <!-- Debug info hidden but checkable in DOM -->
+                            <p style="font-size:10px; color:#333; display:none;">Src: ${rawImg}</p> 
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('summary-subtotal').innerText = '₹' + totalAmount;
+            document.getElementById('summary-total').innerText = '₹' + totalAmount;
+            document.getElementById('pay-display-total').innerText = '₹' + totalAmount;
+
+            // Generate QR for Payment Step
+            document.getElementById("qrcode").innerHTML = "";
+            new QRCode(document.getElementById("qrcode"), {
+                text: `upi://pay?pa=lookify@upi&pn=Lookify&am=${totalAmount}&cu=INR`,
+                width: 120, height: 120
+            });
+        }
+
+        function renderAddresses() {
+            const container = document.getElementById('saved-addresses');
+            container.innerHTML = '';
+
+            ['home', 'work', 'other'].forEach(type => {
+                const addr = addresses[type];
+                if (addr) {
+                    let txt = '';
+                    if (typeof addr === 'string') {
+                        txt = addr;
+                    } else {
+                        const parts = [addr.line1, addr.street, addr.city, addr.state].filter(p => p);
+                        txt = parts.join(', ');
+                        if (addr.pincode) txt += ` - ${addr.pincode}`;
+                    }
+                    container.innerHTML += `
+                        <div class="address-card" onclick="selectAddress('${type}')" id="card-${type}">
+                            <h3>${type.toUpperCase()} <span class="check-icon">✓</span></h3>
+                            <p>${txt}</p>
+                        </div>
+                    `;
+                }
+            });
+
+            if (container.innerHTML === '') {
+                container.innerHTML = '<p style="font-size:13px; color:#666;">No addresses saved.</p>';
+            }
+        }
+
+        // --- 2. ADDRESS LOGIC ---
+        function selectAddress(type) {
+            selectedAddress = addresses[type];
+            document.querySelectorAll('.address-card').forEach(c => c.classList.remove('selected'));
+            const card = document.getElementById(`card-${type}`);
+            if (card) card.classList.add('selected');
+        }
+
+        function autoSelectAddress() {
+            const types = ['home', 'work', 'other'];
+            for (let t of types) {
+                if (addresses[t]) { selectAddress(t); break; }
+            }
+        }
+
+        function toggleNewAddress() {
+            const form = document.getElementById('new-address-form');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+
+        async function saveNewAddress(type) {
+            const line1 = document.getElementById('new-addr-line1').value.trim();
+            const street = document.getElementById('new-addr-street').value.trim();
+            const city = document.getElementById('new-addr-city').value.trim();
+            const state = document.getElementById('new-addr-state').value.trim();
+            const pincode = document.getElementById('new-addr-pincode').value.trim();
+
+            if (!line1 || !pincode) return alert("Please fill at least Address Line 1 and Pincode");
+
+            addresses[type] = { line1, street, city, state, pincode };
+            localStorage.setItem('lookifyAddressData', JSON.stringify(addresses));
+
+            // Sync to backend
+            if (user.email && user.email !== 'guest@lookify.com') {
+                try {
+                    await fetch('http://127.0.0.1:8000/api/update_user', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            email: user.email,
+                            addresses: addresses
+                        })
+                    });
+                    console.log("Address synced to backend");
+                } catch (err) {
+                    console.error("Failed to sync address:", err);
+                }
+            }
+
+            renderAddresses();
+            selectAddress(type);
+            toggleNewAddress();
+        }
+
+        // --- 3. NAVIGATION ---
+        function goToPayment() {
+            if (!selectedAddress) return alert("Please select a delivery address.");
+            document.getElementById('section-address').classList.remove('active');
+            document.getElementById('section-payment').classList.add('active');
+
+            // Update Steps
+            document.getElementById('step-1').classList.remove('active');
+            document.getElementById('step-1').classList.add('finished');
+            document.getElementById('step-2').classList.add('active');
+        }
+
+        function goBackToAddress() {
+            document.getElementById('section-payment').classList.remove('active');
+            document.getElementById('section-address').classList.add('active');
+
+            document.getElementById('step-2').classList.remove('active');
+            document.getElementById('step-1').classList.add('active');
+        }
+
+        // --- 4. PAYMENT LOGIC ---
+        function selectMethod(method) {
+            selectedPayment = method;
+            document.querySelectorAll('.payment-method').forEach(el => el.classList.remove('selected'));
+            event.currentTarget.classList.add('selected');
+            event.currentTarget.querySelector('input').checked = true;
+
+            const btn = document.getElementById('btn-place-order');
+            const title = document.getElementById('pay-mode-title');
+
+            if (method === 'upi') {
+                document.getElementById('upi-area').style.display = 'block';
+                document.getElementById('cod-area').style.display = 'none';
+                title.innerText = "Scan to Pay";
+                btn.innerText = "VERIFY & PAY";
+            } else {
+                document.getElementById('upi-area').style.display = 'none';
+                document.getElementById('cod-area').style.display = 'block';
+                title.innerText = "Review Order";
+                btn.innerText = "PLACE ORDER";
+            }
+        }
+
+        function verifyUpiId() {
+            const id = document.getElementById('upi-id-input').value;
+            if (id.includes('@') && id.length > 5) {
+                document.getElementById('upi-msg').style.display = 'block';
+                document.getElementById('btn-place-order').innerText = "PAY NOW";
+            } else {
+                alert("Please enter a valid UPI ID (e.g. user@upi)");
+                document.getElementById('upi-msg').style.display = 'none';
+            }
+        }
+
+        async function placeOrder() {
+            const btn = document.getElementById('btn-place-order');
+            const userEmail = user.email || 'guest@lookify.com';
+
+            btn.disabled = true;
+            btn.innerText = "PROCESSING...";
+
+            let finalPaymentMethod = selectedPayment;
+            if (selectedPayment === 'upi') {
+                const upiId = document.getElementById('upi-id-input')?.value;
+                if (upiId && upiId.includes('@')) {
+                    finalPaymentMethod = `UPI (${upiId})`;
+                }
+            }
+
+            const payload = {
+                email: userEmail,
+                items: cartData,
+                total: totalAmount,
+                address: selectedAddress,
+                payment_method: finalPaymentMethod
+            };
+
+            try {
+                // CHANGED: Use Port 8000 (server.py)
+                const res = await fetch('http://127.0.0.1:8000/api/checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    showSuccess(data.order_id);
+                } else {
+                    alert("Error: " + data.error);
+                    btn.disabled = false;
+                    btn.innerText = "TRY AGAIN";
+                }
+            } catch (e) {
+                console.error(e);
+                alert("Connection Failed: Ensure Backend is running on port 8000");
+                btn.disabled = false;
+                btn.innerText = "TRY AGAIN";
+            }
+        }
+
+        function showSuccess(orderId) {
+            const emailUsed = user.email || 'guest@lookify.com';
+            document.getElementById('conf-email').innerText = emailUsed;
+
+            document.getElementById('section-payment').classList.remove('active');
+            document.getElementById('section-success').classList.add('active');
+
+            document.getElementById('step-2').classList.remove('active');
+            document.getElementById('step-2').classList.add('finished');
+            document.getElementById('step-3').classList.add('active');
+
+            document.getElementById('final-order-id').innerText = orderId;
+            document.getElementById('progress-steps').style.display = 'none';
+            document.getElementById('page-title').style.display = 'none';
+
+            // Clear Temp Cart
+            sessionStorage.removeItem('temp_cart');
+        }
+
+
+
+        // Run Init
+        init();
+
+    </script>
+</body>
+
+</html>

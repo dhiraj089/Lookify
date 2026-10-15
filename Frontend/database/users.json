@@ -1,0 +1,284 @@
+[
+    {
+        "name": "yash",
+        "email": "yashbhosale8105@gmail.com",
+        "password": "yash",
+        "phone": "",
+        "dob": "",
+        "gender": "",
+        "addresses": {
+            "home": {
+                "city": "Thane",
+                "line1": "vartak nagar near hp gas pokran road no",
+                "pincode": "400606",
+                "state": "Maharashtra",
+                "street": "Flat no 1502 Maithili pride"
+            },
+            "other": "",
+            "work": ""
+        },
+        "wishlist": [
+            {
+                "articleType": "Tshirts",
+                "baseColour": "Grey",
+                "gender": "Men",
+                "id": "53759",
+                "image": "/fashion-dataset/images/53759.jpg",
+                "masterCategory": "Apparel",
+                "price": 349,
+                "productDisplayName": "Puma Men Grey T-shirt",
+                "season": "Summer",
+                "subCategory": "Topwear",
+                "usage": "Casual",
+                "year": "2012"
+            },
+            {
+                "articleType": "Tshirts",
+                "baseColour": "Grey",
+                "gender": "Men",
+                "id": "1855",
+                "image": "/fashion-dataset/images/1855.jpg",
+                "masterCategory": "Apparel",
+                "price": 949,
+                "productDisplayName": "Inkfruit Mens Chain Reaction T-shirt",
+                "season": "Summer",
+                "subCategory": "Topwear",
+                "usage": "Casual",
+                "year": "2011"
+            }
+        ]
+    },
+    {
+        "name": "yash",
+        "email": "yashbhosale696@gmail.com",
+        "password": "yash",
+        "phone": "",
+        "dob": "",
+        "gender": "",
+        "addresses": {
+            "home": {
+                "line1": "Airoli Sector1 shiv colony5",
+                "city": "Mumbai",
+                "pincode": "400708"
+            },
+            "work": {
+                "line1": "Airoli Sector1 shiv colony5",
+                "city": "Mumbai",
+                "pincode": "400708"
+            }
+        },
+        "wishlist": [
+            {
+                "articleType": "Belts",
+                "baseColour": "Black",
+                "gender": "Women",
+                "id": "48123",
+                "image": "/fashion-dataset/images/48123.jpg",
+                "masterCategory": "Accessories",
+                "price": 2049,
+                "productDisplayName": "Fossil Women Black Huarache Weave Belt",
+                "season": "Summer",
+                "subCategory": "Belts",
+                "usage": "Casual",
+                "year": "2012"
+            }
+        ]
+    },
+    {
+        "name": "yash",
+        "email": "ysahbhosale696@gmail.com",
+        "password": "yash",
+        "phone": "",
+        "dob": "",
+        "gender": ""
+    },
+    {
+        "name": "aarya",
+        "email": "aaryabhangare14@gmail.com",
+        "password": "aarya",
+        "phone": "7738634972",
+        "dob": "",
+        "gender": "",
+        "wishlist": [],
+        "addresses": {
+            "home": {
+                "line1": "DUBAI",
+                "street": "ABU DHABHI",
+                "city": "DUBAI",
+                "state": "ABU",
+                "pincode": "34254534"
+            },
+            "other": "",
+            "work": {
+                "line1": "Airoli Sector1 shiv colony5",
+                "street": "",
+                "city": "Mumbai",
+                "state": "Maharashtra",
+                "pincode": "400708"
+            }
+        }
+    },
+    {
+        "name": "sayli",
+        "email": "saylibhangare19@gmail.com",
+        "password": "sayli",
+        "phone": "",
+        "dob": "",
+        "gender": "",
+        "addresses": {
+            "home": {
+                "line1": "Airoli Sector1 shiv colony5",
+                "street": "",
+                "city": "Mumbai",
+                "state": "Maharashtra",
+                "pincode": "400708"
+            },
+            "other": "",
+            "work": ""
+        },
+        "wishlist": [
+            {
+                "articleType": "Tshirts",
+                "baseColour": "Black",
+                "gender": "Women",
+                "id": "2288",
+                "image": "/fashion-dataset/images/2288.jpg",
+                "masterCategory": "Apparel",
+                "price": 1449,
+                "productDisplayName": "Nike Women Black T-shirt",
+                "season": "Fall",
+                "subCategory": "Topwear",
+                "usage": "Sports",
+                "year": "2010"
+            },
+            {
+                "articleType": "Tshirts",
+                "baseColour": "Purple",
+                "gender": "Women",
+                "id": "38630",
+                "image": "/fashion-dataset/images/38630.jpg",
+                "masterCategory": "Apparel",
+                "price": 1049,
+                "productDisplayName": "Nike Women Purple Polo T-shirt",
+                "season": "Summer",
+                "subCategory": "Topwear",
+                "usage": "Casual",
+                "year": "2012"
+            },
+            {
+                "articleType": "Tshirts",
+                "baseColour": "Pink",
+                "gender": "Women",
+                "id": "3954",
+                "image": "/fashion-dataset/images/3954.jpg",
+                "masterCategory": "Apparel",
+                "price": 1349,
+                "productDisplayName": "Jealous 21 Women's Pink T-shirt",
+                "season": "Summer",
+                "subCategory": "Topwear",
+                "usage": "Casual",
+                "year": "2011"
+            }
+        ]
+    },
+    {
+        "name": "sayli",
+        "email": "bhangaresayli09@gmail.com",
+        "password": "sayli",
+        "phone": "",
+        "dob": "",
+        "gender": "",
+        "wishlist": [
+            {
+                "articleType": "Tshirts",
+                "baseColour": "Grey",
+                "gender": "Men",
+                "id": "1855",
+                "image": "/fashion-dataset/images/1855.jpg",
+                "masterCategory": "Apparel",
+                "price": 849,
+                "productDisplayName": "Inkfruit Mens Chain Reaction T-shirt",
+                "season": "Summer",
+                "subCategory": "Topwear",
+                "usage": "Casual",
+                "year": "2011"
+            }
+        ]
+    },
+    {
+        "name": "solar",
+        "email": "solarterrain1234@gmail.com",
+        "password": "solar",
+        "phone": "",
+        "dob": "",
+        "gender": "",
+        "addresses": {
+            "home": {
+                "line1": "katraj rajas society",
+                "street": "katraj",
+                "city": "pune",
+                "state": "Maharashtra",
+                "pincode": "400708"
+            },
+            "other": "",
+            "work": ""
+        },
+        "wishlist": [
+            {
+                "articleType": "Tshirts",
+                "baseColour": "Black",
+                "gender": "Women",
+                "id": "2288",
+                "image": "/fashion-dataset/images/2288.jpg",
+                "masterCategory": "Apparel",
+                "price": 1749,
+                "productDisplayName": "Nike Women Black T-shirt",
+                "season": "Fall",
+                "subCategory": "Topwear",
+                "usage": "Sports",
+                "year": "2010"
+            },
+            {
+                "articleType": "Sweatshirts",
+                "baseColour": "Black",
+                "gender": "Women",
+                "id": "11385",
+                "image": "/fashion-dataset/images/11385.jpg",
+                "masterCategory": "Apparel",
+                "price": 1749,
+                "productDisplayName": "United Colors Of Benetton Women Light Winter Black Sweatshirts",
+                "season": "Fall",
+                "subCategory": "Topwear",
+                "usage": "Casual",
+                "year": "2011"
+            }
+        ]
+    },
+    {
+        "name": "Balu",
+        "email": "bbhangare4@gmail.com",
+        "password": "balu",
+        "phone": "",
+        "dob": "",
+        "gender": "",
+        "addresses": {
+            "home": {
+                "line1": "kalyan smmruddhi apt",
+                "street": "samrruddhi",
+                "city": "kalyan",
+                "state": "Maharashtra",
+                "pincode": "400306"
+            },
+            "other": "",
+            "work": ""
+        }
+    },
+    {
+        "name": "Dhiraj Jadhav",
+        "email": "23107131@apsit.edu.in",
+        "password": "12345",
+        "phone": "",
+        "dob": "",
+        "gender": ""
+    }
+]

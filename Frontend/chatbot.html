@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookify AI - High Fashion Stylist</title>
+    <!-- Fonts: Playfair for Luxury feel, Outfit for modern text -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --chat-bg: #ffffff;
+            --msg-user-bg: #000000;
+            --msg-user-text: #ffffff;
+            --msg-bot-bg: #f4f4f4;
+            --msg-bot-text: #000000;
+            --border-color: #000000;
+            --accent-color: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            position: relative;
+        }
+
+        /* Overlay for better readability over background */
+        body::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            /* Dark overlay */
+            backdrop-filter: blur(5px);
+            z-index: -1;
+        }
+
+        /* MAIN CONTAINER */
+        .chat-container {
+            width: 90%;
+            max-width: 1000px;
+            /* Increased size significantly */
+            background: rgba(255, 255, 255, 0.95);
+            /* Slightly transparent white */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            /* Softer, modern corners */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            height: 85vh;
+            position: relative;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            /* rounded corners clip content */
+        }
+
+        /* HEADER */
+        .header {
+            padding: 25px 20px;
+            text-align: center;
+            border-bottom: 2px solid #000;
+            background: #fff;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .header h1 span {
+            font-size: 36px;
+        }
+
+        .header p {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            opacity: 0.6;
+        }
+
+        /* CHAT AREA */
+        .chat-box {
+            flex: 1;
+            padding: 25px;
+            overflow-y: auto;
+            background: #fff;
+            /* Subtle grid pattern for texture */
+            background-image:
+                linear-gradient(#e5e5e5 1px, transparent 1px),
+                linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .message {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
+            animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            background: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            /* Circle avatar */
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+
+        .message.user .avatar {
+            display: none;
+            /* Hide avatar for user for cleaner look */
+        }
+
+        /* BUBBLES */
+        .bubble {
+            max-width: 80%;
+            padding: 14px 18px;
+            font-size: 14px;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .bot .bubble {
+            background: #fff;
+            border: 1px solid #000;
+            color: #000;
+            border-radius: 0 12px 12px 12px;
+            box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .user .bubble {
+            background: #000;
+            color: #fff;
+            border-radius: 12px 12px 0 12px;
+            /* border: 1px solid #000; */
+        }
+
+        /* INPUT AREA */
+        .input-area {
+            padding: 20px;
+            background: #fff;
+            border-top: 2px solid #000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            font-family: inherit;
+            font-size: 15px;
+            outline: none;
+            background: transparent;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #000;
+        }
+
+        button {
+            background: #000;
+            border: 1px solid #000;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #fff;
+            color: #000;
+            transform: rotate(-45deg);
+            /* Interesting interaction */
+        }
+
+        button:disabled {
+            background: #ccc;
+            border-color: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* TYPING INDICATOR */
+        .typing {
+            display: none;
+            padding: 10px 14px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 0 12px 12px 12px;
+            margin-left: 44px;
+            margin-bottom: 20px;
+            width: fit-content;
+        }
+
+        .typing span {
+            width: 6px;
+            height: 6px;
+            background: #000;
+            display: inline-block;
+            border-radius: 50%;
+            margin: 0 2px;
+            animation: blink 1.4s infinite both;
+        }
+
+        .typing span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0.2;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.2;
+            }
+        }
+
+        /* SCROLLBAR */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chat-container">
+        <div class="header">
+            <h1 onclick="window.location.href='index.html'" style="cursor: pointer;" title="Back to Home">
+                <span>✦</span> Lookify
+            </h1>
+            <p>AI Styling Assistant</p>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <!-- Messages -->
+            <div class="message bot">
+                <div class="avatar">
+                    <span class="material-symbols-outlined" style="font-size: 18px;">styler</span>
+                </div>
+                <div class="bubble">
+                    Hi, I'm Lookify. Whether it's monochrome chic or avant-garde, I'm here to curate your style. What
+                    are we wearing today?
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing" id="typing-indicator">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()" id="send-btn">
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- CONFIGURATION ---
+        const GEMINI_API_KEY = 'AIzaSyCB_R8RNyXmeazjxIZHMEw7UQPxsIgUIHI'; // Your API Key
+        const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const typingIndicator = document.getElementById('typing-indicator');
+
+        // System Prompt for High-End Fashion Context
+        const SYSTEM_PROMPT = `You are Lookify, a high-end AI fashion consultant.
+    Your Style: Minimalist, chic, confident, and trend-aware.
+    Goal: Provide sophisticated, DETAILED, and COMPLETE outfit advice.
+    IMPORTANT: Ensure you finish your entire thought. Do not stop mid-sentence.
+    Tone: Professional yet conversational, like a luxury personal shopper.
+    Formatting: Use bullet points for lists. Be thorough.`;
+
+        function scrollToBottom() {
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        async function sendMessage() {
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            // 1. Add User Message
+            appendMessage('user', text);
+            userInput.value = '';
+            sendBtn.disabled = true;
+
+            // 2. Show Typing Indicator
+            typingIndicator.style.display = 'block';
+            scrollToBottom();
+
+            try {
+                // 3. Call Gemini API
+                const response = await fetch(GEMINI_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{ text: `${SYSTEM_PROMPT}\n\nUser Question: ${text}\n\nProvide a full and complete answer:` }]
+                        }],
+                        generationConfig: {
+                            temperature: 0.7,
+                            maxOutputTokens: 8000
+                        }
+                    })
+                });
+
+                const data = await response.json();
+
+                // 4. Hide Typing Indicator
+                typingIndicator.style.display = 'none';
+
+                if (data.candidates && data.candidates[0].content.parts[0].text) {
+                    const botReply = data.candidates[0].content.parts[0].text;
+
+                    // Enhanced Formatting
+                    let formattedReply = botReply
+                        // Bold: **text** -> <b>text</b>
+                        .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+                        // Headers: ## Text -> <h3>Text</h3>
+                        .replace(/^##\s+(.*$)/gm, '<h3 style="font-size: 16px; margin-top: 10px;">$1</h3>')
+                        // Bullet points: * Text or - Text -> <li>Text</li> (wrapped in logic below)
+                        .replace(/^\*\s+(.*$)/gm, '<li>$1</li>')
+                        .replace(/^- \s+(.*$)/gm, '<li>$1</li>')
+                        // Newlines to <br>
+                        .replace(/\n/g, '<br>');
+
+                    // Wrap stray <li> in <ul> if needed, or simple bullet styling
+                    formattedReply = formattedReply.replace(/(<li>.*<\/li>)/s, '<ul style="margin-left: 20px;">$1</ul>');
+
+                    appendMessage('bot', formattedReply);
+                } else {
+                    appendMessage('bot', "I'm experiencing a momentary glitch. Let's try that again.");
+                }
+
+            } catch (error) {
+                console.error(error);
+                typingIndicator.style.display = 'none';
+                appendMessage('bot', "Connection issue. Please check your internet.");
+            }
+
+            sendBtn.disabled = false;
+            scrollToBottom();
+        }
+
+        function appendMessage(sender, text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message ${sender}`;
+
+            // Avatar for Bot only
+            if (sender === 'bot') {
+                const avatarDiv = document.createElement('div');
+                avatarDiv.className = 'avatar';
+                avatarDiv.innerHTML = `<span class="material-symbols-outlined" style="font-size: 18px;">styler</span>`;
+                msgDiv.appendChild(avatarDiv);
+            }
+
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = 'bubble';
+            bubbleDiv.innerHTML = text;
+
+            msgDiv.appendChild(bubbleDiv);
+            chatBox.appendChild(msgDiv);
+        }
+    </script>
+
+</body>
+
+</html>
